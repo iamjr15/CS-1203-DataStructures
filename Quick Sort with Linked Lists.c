@@ -6,7 +6,7 @@ struct Node {
     struct Node* next;
 };
  
-void insert(struct Node** head, int value)
+void insertFunc(struct Node** head, int value)
 {
     struct Node* node
         = (struct Node*)malloc(sizeof(struct Node));
@@ -98,16 +98,16 @@ void quick_sort(struct Node* first, struct Node* last)
 int main()
 {
     struct Node* head = NULL;
-     insert(&head, 41);
-    insert(&head, 5);
-    insert(&head, 7);
-    insert(&head, 22);
-    insert(&head, 24);
-    insert(&head, 63);
-    insert(&head, 41);
-    insert(&head, 80);
-    insert(&head, 23);
-    insert(&head, 11);
+     insertFunc(&head, 41);
+    insertFunc(&head, 5);
+    insertFunc(&head, 7);
+    insertFunc(&head, 22);
+    insertFunc(&head, 24);
+    insertFunc(&head, 63);
+    insertFunc(&head, 41);
+    insertFunc(&head, 80);
+    insertFunc(&head, 23);
+    insertFunc(&head, 11);
     printf("\n Before Sorting :");
     display(head);
  

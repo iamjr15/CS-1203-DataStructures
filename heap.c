@@ -16,7 +16,7 @@ void display()
     printf("\n");
 }
 
-void insert(int num, int location)
+void insertFunc(int num, int location)
 {
     int parentnode;
     while (location > 0)
@@ -64,7 +64,7 @@ void main()
         case 1:
             printf("Enter the element to be inserted to the list : ");
             scanf("%d", &num);
-            insert(num, n);
+            insertFunc(num, n);
             n = n + 1;
             break;
         case 2:
